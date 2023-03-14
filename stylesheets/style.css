@@ -1,0 +1,68 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    font-weight: 350;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    padding: 0px 10px 0px 10px;
+    background-color: #222;
+}
+.header .header-right a:hover{
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black;
+}
+.header .header-right .active{
+    box-shadow: 0px 0px 15px black inset;
+    border-radius: 15px;
+}
+.header{
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    background-color: darkslategrey;
+    padding: 20px;
+    margin: 30px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+.header a .logo{
+    font-weight: 100;
+    font-variant: small-caps;
+    letter-spacing: 0px;
+    line-height: 35px;
+    width: 300px;
+    height: 100px;
+    margin: 0px;
+    display: inline-flex;
+}
+.header .header-right{
+    float: right;
+}
+.header .header-right a{
+    transform: translateY(25px);
+    float: left;
+    overflow: hidden;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+@media screen and (max-width: 850px){
+    .header .header-right a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header .header-right {
+      float: none;
+      background-color: darkslategray;
+      border-radius: 10px;
+    }
+}
